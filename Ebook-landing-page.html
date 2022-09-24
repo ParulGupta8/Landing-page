@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebook Landing Page</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <!-- ***************************** NAVBAR **************************** -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a href="#" class="navbar-brand"> Tech<span class="text_style text-danger">Library</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarcollapse">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-items"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-items"><a href="#subscribe" class="nav-link">Subscribe</a></li>
+                    <li class="nav-items"><a href="#ebook" class="nav-link">Ebook</a></li>
+                    <li class="nav-items"><a href="#download" class="nav-link">Download</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ******************************** HEADER & IMAGE ********************* -->
+    <header>
+        <div class="dark-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="box col-lg-8 text-center mx-auto">
+                        <h1 class="faded_text text-light my-3">How to become successful at<span class="text_style text-danger"> Freelancing</span></h1>
+                            <a href="#" class="learn_more btn mx-2">Learn More</a>
+                            <a href="#" class="free_ebook btn mx-2">Free Ebook Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******************************** SUBSCRIPTION FORM ********************* -->
+        <div id="subscribe" class="subscribe pt-4 pb-5">
+            <div class="container py-4">
+                <h2 class="display-4 pb-4 text-center text-light">Subscribe To Our Newsletter</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <input id="name" class="bg-transparent btn-block" type="text" placeholder="Name"></input>
+                        <p class="nm"> <i class="fa-sharp fa-solid fa-circle-exclamation"></i> name  </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <input id="email" class="bg-transparent btn-block" type="text" placeholder="Email"></input>
+                        <p class="em"> <i class="fa-sharp fa-solid fa-circle-exclamation"></i> mail  </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <button id="subs_btn" onclick="check()" class="btn btn-block subscribe_btn bg-white text-danger" type="button">Subscribe</button>
+                    </div>
+                    <div class="msg" id="msg"> </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ******************************** EBOOK INTRO  ********************* -->
+    <div id="ebook">
+        <div class="container">
+            <div class="ebook_row row my-5">
+                <div class="col-lg-5 m-auto"> <img class="ebook_img" src="ebook.jpg" alt="Ebook"> </div>
+                <div class="col-lg-6 intro">
+                    <h3 class="text-danger" style="text-align: initial;">Learn the effective methods and techniques to launch a successful freelancing career:</h3>
+                    <ul class="text-secondary" style="text-align: initial;">
+                        <li>10 Things to remember before starting your freelancing career</li>
+                        <li>Where to get your first client and keep them returning to you</li>
+                        <li>How to negotiate your salary with your clients</li>
+                        <li>Where to apply for job as a freelancer</li>
+                        <li>Job vs Freelancing</li>
+                        <li>Staying motivated for freelancing career</li>
+                        <li>Do's and Don'ts as a freelancer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ******************************** CLOUD & DOWNLOAD ********************* -->
+    <div id="download" class="action">
+        <div class="dark-overlay">
+            <div class="cloud-overlay">
+                <div class="container pt-5">
+                    <div class="row ">
+                        <div class="col-lg-10 mx-auto text-center">
+                            <h2 class="white_text display-4 text-light">Read Any Time Anywhere</h2>
+                            <h4 class="faded_text text-danger">Available For Download On Amazon Kindle</h4>
+                            <h6 class="white_text text-light ">Grab Your Free Copy</h6>
+                            <a href="#" class="btn text-light bg-danger mt-4">Download Now</a>
+                            <div class="py-3">
+                                <li class="fas fa-desktop"></li>
+                                <li class="fas fa-tablet-alt"></li>
+                                <li class="fas fa-mobile-alt"></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ******************************** FOOTER ********************* -->
+    <footer class="bg-dark text-center text-light py-4">
+        <p>Copyright 2022 || Powered By Parul Web Design and Development </p>
+    </footer>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
